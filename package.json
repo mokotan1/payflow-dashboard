@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "pnpm --filter @payflow/web dev",
     "build": "pnpm -r build",
-    "test": "pnpm --filter @payflow/domain test",
+    "test": "pnpm --filter @payflow/domain test && pnpm --filter @payflow/web test",
     "typecheck": "pnpm -r typecheck"
   },
   "devDependencies": {

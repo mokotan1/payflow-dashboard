@@ -165,6 +165,8 @@ pnpm dev       # apps/web Vite 개발 서버
 pnpm build     # 웹앱 빌드
 ```
 
+`main` 브랜치 push와 PR에서 GitHub Actions CI가 `test`, `typecheck`, `build`를 실행합니다.
+
 루트의 `wallet-cards.html`은 초기 HTML 데모입니다. 새 UI는 `apps/web`을 사용합니다.
 
 ## 주의
