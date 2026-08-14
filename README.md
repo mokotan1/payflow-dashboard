@@ -149,11 +149,23 @@ Gmail에서 정기결제 관련 메일을 찾아 결제 예정 목록, 결제 �
 
 - [x] UI 방향 결정: 스마트 월렛
 - [x] 정적 HTML UI 견본 제작
+- [x] pnpm 모노레포 + 도메인 테스트 + React 웹앱 스캐폴딩 (단계 A 진행 중)
 - [ ] 데스크톱 기술 스택 확정
 - [ ] Gmail OAuth 및 데이터 처리 설계
 - [ ] 메일 분류 규칙과 테스트 데이터 정의
 - [ ] 결제 연동 가능 범위 조사
 - [ ] 데스크톱 MVP 구현
+
+## 개발
+
+```bash
+pnpm install
+pnpm test      # 도메인 단위 테스트
+pnpm dev       # apps/web Vite 개발 서버
+pnpm build     # 웹앱 빌드
+```
+
+루트의 `wallet-cards.html`은 초기 HTML 데모입니다. 새 UI는 `apps/web`을 사용합니다.
 
 ## 주의
 

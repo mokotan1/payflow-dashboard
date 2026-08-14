@@ -1,0 +1,21 @@
+{
+  "name": "@payflow/domain",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@payflow/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@payflow/test-fixtures": "workspace:*",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

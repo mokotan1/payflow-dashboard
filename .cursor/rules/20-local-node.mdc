@@ -1,0 +1,10 @@
+---
+description: 사용자 PC 로컬 노드, 저장소, Gmail 동기화 코드를 변경할 때 적용한다.
+globs: apps/local-node/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+- API는 `127.0.0.1` loopback에만 바인딩한다.
+- 모든 입력을 검증하고, 사용자·기기·세션 권한을 다시 확인한다.
+- 토큰과 키는 OS 키체인을 통해 참조한다. DB, 로그, 예외에는 평문으로 남기지 않는다.
+- Gmail 구현은 익명화된 픽스처와 최소 OAuth 범위부터 테스트한다.

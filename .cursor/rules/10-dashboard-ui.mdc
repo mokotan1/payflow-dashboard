@@ -1,0 +1,11 @@
+---
+description: Payflow 대시보드 UI와 모바일 브라우저 경험을 구현할 때 적용한다.
+globs: apps/web/**/*.{ts,tsx,css,html}, *.{html,css,js}, tests/**/*.js
+alwaysApply: false
+---
+
+- 로딩, 빈 상태, 연결 끊김, 권한 거부, 오류 상태를 화면 설계에 포함한다.
+- 키보드 조작, 레이블, 포커스, 대비를 확인한다.
+- UI는 계약 패키지의 타입만 사용하고 DB·OAuth·터널 세부사항을 직접 참조하지 않는다.
+- 데이터가 데모인지, 마지막 동기화 시각과 현재 연결 상태를 명확히 표시한다.
+- 모노레포 이전에는 루트 `wallet-cards.html`, `styles.css`, `app.js`를 UI 경계로 취급한다.
